@@ -95,10 +95,11 @@ struct GameCanvas: View {
                 }
             }
 
-            // Foam cap: the band between the foam top and the liquid line.
+            // Foam cap: the band between the foam top and the liquid line,
+            // carved out by polygon clipping rather than a path subtraction,
+            // which is iOS 17+.
             if game.physics.foam > 0.0005 {
-                let band = Path(outline.clipBelow(surfaceY).path)
-                    .subtracting(Path(outline.clipBelow(liquidTopY).path))
+                let band = Path(outline.clipBelow(surfaceY).clipAbove(liquidTopY).path)
                 inner.fill(band, with: .color(Palette.foam))
                 inner.stroke(band, with: .color(Palette.foamShade.opacity(0.55)), lineWidth: 2)
                 paintFoamTop(&inner, g, surfaceY)

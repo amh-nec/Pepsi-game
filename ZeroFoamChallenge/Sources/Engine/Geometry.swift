@@ -36,6 +36,26 @@ struct Poly {
         return Poly(points: out)
     }
 
+    /// The part of this polygon that lies *above* the horizontal line `y`.
+    /// Together with `clipBelow` this carves out a horizontal band without
+    /// needing path booleans, which are iOS 17+.
+    func clipAbove(_ y: CGFloat) -> Poly {
+        guard !points.isEmpty else { return Poly(points: []) }
+        var out: [CGPoint] = []
+        for i in points.indices {
+            let cur = points[i]
+            let nxt = points[(i + 1) % points.count]
+            let curIn = cur.y <= y
+            let nxtIn = nxt.y <= y
+            if curIn { out.append(cur) }
+            if curIn != nxtIn {
+                let t = (y - cur.y) / (nxt.y - cur.y)
+                out.append(CGPoint(x: cur.x + (nxt.x - cur.x) * t, y: y))
+            }
+        }
+        return Poly(points: out)
+    }
+
     var path: CGPath {
         let p = CGMutablePath()
         guard let first = points.first else { return p }
