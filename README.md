@@ -1,10 +1,14 @@
 # The Zero Foam Challenge
 
+Two implementations of the same game and the same simulation model:
+the Flutter app at the repository root, and a native SwiftUI/iOS port in
+[`ZeroFoamChallenge/`](ZeroFoamChallenge/README.md).
+
 A mobile-native, 2D physics-based hyper-casual pouring game built in Flutter.
 Pour cola down the tilted wall of the glass to keep the flow laminar, fill to
 90% before the timer runs out — and never let it overflow.
 
-## Running
+## Running (Flutter)
 
 The repository contains the Dart sources only; generate the platform folders
 once with:

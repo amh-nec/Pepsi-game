@@ -1,0 +1,25 @@
+name: ZeroFoamChallenge
+options:
+  bundleIdPrefix: com.zerofoam
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  ZeroFoamChallenge:
+    type: application
+    platform: iOS
+    sources:
+      - Sources
+    info:
+      path: Resources/Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zerofoam.challenge
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "1"
+  ZeroFoamChallengeTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - Tests
+    dependencies:
+      - target: ZeroFoamChallenge
