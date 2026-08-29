@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		784416F1DA25B0643CBA0620 /* ZeroFoamChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97E0A70EF1168F7F2A30C8C /* ZeroFoamChallengeApp.swift */; };
+		3231BE82E7A2BF5E01E4A7F3 /* Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90CD519CA3CA96174EFDC3 /* Effects.swift */; };
+		3A3F7281A40F75386D654FF9 /* GameAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3351F63F7B1EF70FCE11FD16 /* GameAudio.swift */; };
+		B37C1A752BE0D7369A81762F /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E38827A3302CAE8AAF805E8 /* GameController.swift */; };
+		6B97AFFFE55FBC8D41C7C252 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EB6E9316EAC29522B96625 /* Geometry.swift */; };
+		CFB08AB011E5C50549D6F054 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BF63FAD86158CA7D348555 /* Haptics.swift */; };
+		72B2CE7128DABA07BABCCD46 /* MotionInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A081B2898319182DF86840E /* MotionInput.swift */; };
+		F0F0673CEB44EC88A98D170A /* PourPhysics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3D0D29EDC82A82D4CE5AD7 /* PourPhysics.swift */; };
+		564B49001DDFB22607AE1DAD /* GameCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA83CF8487DA78870A637FC /* GameCanvas.swift */; };
+		BEABA8135A91EF8820EF00C3 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3403FC69A511CFCC08B3C26B /* GameView.swift */; };
+		747A34C6D31976B9FACE4BC4 /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF834ACBFE0BC7D4D41308 /* HUDView.swift */; };
+		83209F0FD5F3E039B14AF7BB /* Overlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EB053B8E1A4B2911B161DD /* Overlays.swift */; };
+		0C505B4D48A0EBE97053D397 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD363B273EE29ABBEA1DFAE6 /* Palette.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84337AD8D27FCD69AF2C4FC2 /* ZeroFoamChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroFoamChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C97E0A70EF1168F7F2A30C8C /* ZeroFoamChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroFoamChallengeApp.swift; sourceTree = "<group>"; };
+		AD90CD519CA3CA96174EFDC3 /* Effects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effects.swift; sourceTree = "<group>"; };
+		3351F63F7B1EF70FCE11FD16 /* GameAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAudio.swift; sourceTree = "<group>"; };
+		2E38827A3302CAE8AAF805E8 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		04EB6E9316EAC29522B96625 /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		01BF63FAD86158CA7D348555 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		5A081B2898319182DF86840E /* MotionInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionInput.swift; sourceTree = "<group>"; };
+		5F3D0D29EDC82A82D4CE5AD7 /* PourPhysics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PourPhysics.swift; sourceTree = "<group>"; };
+		DCA83CF8487DA78870A637FC /* GameCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCanvas.swift; sourceTree = "<group>"; };
+		3403FC69A511CFCC08B3C26B /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		CFCF834ACBFE0BC7D4D41308 /* HUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
+		41EB053B8E1A4B2911B161DD /* Overlays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overlays.swift; sourceTree = "<group>"; };
+		BD363B273EE29ABBEA1DFAE6 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		424153ED3CD079DB4DB459AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9340614599AB78F485950C7 = {
+			isa = PBXGroup;
+			children = (
+				1507F349832A04790D3C1273 /* Sources */,
+				547D009064F7C3F13BEF3460 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		547D009064F7C3F13BEF3460 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84337AD8D27FCD69AF2C4FC2 /* ZeroFoamChallenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1507F349832A04790D3C1273 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C97E0A70EF1168F7F2A30C8C /* ZeroFoamChallengeApp.swift */,
+				7B86E98FA2B577A7016EB9C3 /* Engine */,
+				29AC9F3F890EAF73DB9E7C81 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		7B86E98FA2B577A7016EB9C3 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				AD90CD519CA3CA96174EFDC3 /* Effects.swift */,
+				3351F63F7B1EF70FCE11FD16 /* GameAudio.swift */,
+				2E38827A3302CAE8AAF805E8 /* GameController.swift */,
+				04EB6E9316EAC29522B96625 /* Geometry.swift */,
+				01BF63FAD86158CA7D348555 /* Haptics.swift */,
+				5A081B2898319182DF86840E /* MotionInput.swift */,
+				5F3D0D29EDC82A82D4CE5AD7 /* PourPhysics.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		29AC9F3F890EAF73DB9E7C81 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCA83CF8487DA78870A637FC /* GameCanvas.swift */,
+				3403FC69A511CFCC08B3C26B /* GameView.swift */,
+				CFCF834ACBFE0BC7D4D41308 /* HUDView.swift */,
+				41EB053B8E1A4B2911B161DD /* Overlays.swift */,
+				BD363B273EE29ABBEA1DFAE6 /* Palette.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3435DDA2687639586BF0B70 /* ZeroFoamChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 354589B28580510B6EC24620 /* Build configuration list for PBXNativeTarget "ZeroFoamChallenge" */;
+			buildPhases = (
+				7A70D71C385290AF96BF1031 /* Sources */,
+				424153ED3CD079DB4DB459AF /* Frameworks */,
+				285BB1C1430063331E9F5DD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZeroFoamChallenge;
+			productName = ZeroFoamChallenge;
+			productReference = 84337AD8D27FCD69AF2C4FC2 /* ZeroFoamChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					E3435DDA2687639586BF0B70 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 1F4E3D13C2320EDA50221924 /* Build configuration list for PBXProject "ZeroFoamChallenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9340614599AB78F485950C7;
+			productRefGroup = 547D009064F7C3F13BEF3460 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3435DDA2687639586BF0B70 /* ZeroFoamChallenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		285BB1C1430063331E9F5DD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A70D71C385290AF96BF1031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784416F1DA25B0643CBA0620 /* ZeroFoamChallengeApp.swift in Sources */,
+				3231BE82E7A2BF5E01E4A7F3 /* Effects.swift in Sources */,
+				3A3F7281A40F75386D654FF9 /* GameAudio.swift in Sources */,
+				B37C1A752BE0D7369A81762F /* GameController.swift in Sources */,
+				6B97AFFFE55FBC8D41C7C252 /* Geometry.swift in Sources */,
+				CFB08AB011E5C50549D6F054 /* Haptics.swift in Sources */,
+				72B2CE7128DABA07BABCCD46 /* MotionInput.swift in Sources */,
+				F0F0673CEB44EC88A98D170A /* PourPhysics.swift in Sources */,
+				564B49001DDFB22607AE1DAD /* GameCanvas.swift in Sources */,
+				BEABA8135A91EF8820EF00C3 /* GameView.swift in Sources */,
+				747A34C6D31976B9FACE4BC4 /* HUDView.swift in Sources */,
+				83209F0FD5F3E039B14AF7BB /* Overlays.swift in Sources */,
+				0C505B4D48A0EBE97053D397 /* Palette.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		92E165A9035A603BE73D2E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1D3BBA94590957B0374D6E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F22D2FFCC45240A8FF5EBE4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zerofoam.challenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FE4F802C632EAD717BA35062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zerofoam.challenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F4E3D13C2320EDA50221924 /* Build configuration list for PBXProject "ZeroFoamChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92E165A9035A603BE73D2E62 /* Debug */,
+				E1D3BBA94590957B0374D6E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		354589B28580510B6EC24620 /* Build configuration list for PBXNativeTarget "ZeroFoamChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22D2FFCC45240A8FF5EBE4A /* Debug */,
+				FE4F802C632EAD717BA35062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}

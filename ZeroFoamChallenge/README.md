@@ -7,20 +7,24 @@ comes from CoreMotion and the sound effects are synthesized into
 
 ## Building
 
-The sources are project-file free. Either drop `Sources/` into a new Xcode
-iOS App target (deployment target **iOS 16**, portrait only), or generate the
-project with [XcodeGen](https://github.com/yonaskolb/XcodeGen):
+A ready-to-open Xcode project is checked in — no tooling to install:
 
 ```bash
-brew install xcodegen
 cd ZeroFoamChallenge
-xcodegen generate
 open ZeroFoamChallenge.xcodeproj
 ```
 
-Portrait lock, hidden status bar and the accelerometer capability are declared
-in `Resources/Info.plist`. No usage-description key is needed: the
-accelerometer is not a privacy-gated sensor.
+Deployment target is iOS 16, iPhone only. Portrait lock and the hidden status
+bar are set as `INFOPLIST_KEY_*` build settings, so the target generates its
+own Info.plist; no usage-description key is needed, as the accelerometer is
+not a privacy-gated sensor. Set your own team under Signing & Capabilities to
+run on a device — the Simulator needs no signing, but it reports no
+accelerometer, so tilt control only appears on hardware.
+
+`project.yml` and `Resources/Info.plist` remain for anyone who would rather
+regenerate the project with [XcodeGen](https://github.com/yonaskolb/XcodeGen)
+(`xcodegen generate`); the checked-in project does not read them. The XCTest
+target exists only on that path — the checked-in project builds the app alone.
 
 ## Structure
 
@@ -39,7 +43,7 @@ never mutates state.
 | `Sources/Engine/MotionInput.swift` | CoreMotion accelerometer with silent fallback |
 | `Sources/Views/GameCanvas.swift` | The whole playfield in one SwiftUI `Canvas` |
 | `Sources/Views/` | HUD, overlays, gesture layer, palette |
-| `Tests/` | XCTest cover of the geometry and pour physics |
+| `Tests/` | XCTest cover of the geometry and pour physics (XcodeGen path only) |
 
 ## Flutter → SwiftUI mapping
 
