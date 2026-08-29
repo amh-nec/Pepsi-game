@@ -267,10 +267,13 @@ final class GameController: ObservableObject {
 
 /// CADisplayLink retains its target, so the controller hands it a proxy
 /// instead of itself and keeps the retain cycle out of the way.
-private final class DisplayLinkProxy {
+private final class DisplayLinkProxy: NSObject {
     private let handler: (CADisplayLink) -> Void
 
-    init(_ handler: @escaping (CADisplayLink) -> Void) { self.handler = handler }
+    init(_ handler: @escaping (CADisplayLink) -> Void) {
+        self.handler = handler
+        super.init()
+    }
 
     @objc func step(_ link: CADisplayLink) { handler(link) }
 }
